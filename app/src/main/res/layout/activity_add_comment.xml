@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".AddComment">
+
+    <EditText
+        android:id="@+id/comment_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:inputType="textPersonName"
+        android:text="Comment: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="15dp"
+
+        />
+
+    <EditText
+        android:id="@+id/comment_editTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Comment Here"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toRightOf="@+id/comment_Label"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <Button
+        android:id="@+id/btn_AddComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Comment"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/comment_editTxt"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
